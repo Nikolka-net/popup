@@ -132,6 +132,7 @@ p {
 	transition: all 0.8s ease 0s;
 }
 
+/* Только css, без js */
 /* при нажатии на ссылку появл. окно*/
 /* .popup:target {
 	opacity: 1;
@@ -142,6 +143,17 @@ p {
 	transform: perspective(600px) translate(0px,0%) rotateX(0deg);
 	opacity: 1;
 } */
+
+/* при клике вне окна оно закрывается */
+/* .popup__area {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+} */
+
+/* end только css */
 
 .popup.open {
 	opacity: 1;
@@ -154,14 +166,6 @@ p {
 }
 
 
-/* при клике вне окна оно закрывается */
-.popup__area {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-}
 
 .popup__body {
 	min-height: 100%;
@@ -178,9 +182,19 @@ p {
 	color: #000;
 	opacity: 0;
 	transition: all 0.8s ease 0s;
-	/* transform: translate(0px,-100%); */
 	transform: perspective(600px) translate(0px,-100%) rotateX(45deg);
 }
+
+.popup__content_image {
+	padding: 0;
+}
+
+.popup__image img {
+	max-width: 100%;
+	/* убираем полосу внизу img */
+	vertical-align: top;
+}
+
 .popup__close {
 	position: absolute;
 	right: 10px;
