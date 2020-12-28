@@ -130,6 +130,7 @@ p {
 	overflow-y: auto;
 	overflow-x: hidden;
 	transition: all 0.8s ease 0s;
+	z-index: 100;
 }
 
 /* Только css, без js */

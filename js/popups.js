@@ -64,7 +64,7 @@ function popupClose(popupActive, doUnlock) {
 	}
 }
 
-/* Для соврем. браузеров */
+/* Закрытие окна, для соврем. браузеров */
 // function popupClose(popupActive, doUnlock = true) {
 // 	if (unlock) {
 // 		popupActive.classList.remove('open'); // удал. класс open
